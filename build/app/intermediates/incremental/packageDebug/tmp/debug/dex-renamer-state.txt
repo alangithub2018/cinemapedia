@@ -1,0 +1,4 @@
+#Sun Mar 03 21:53:01 CST 2024
+base.0=/Users/macbookair/Desktop/flutter/cinemapedia/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
