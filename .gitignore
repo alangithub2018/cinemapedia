@@ -1,5 +1,4 @@
 .env
-# Flutter/Dart specific
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
@@ -17,14 +16,10 @@ web/packages/
 web/favicon.png
 web/index.html
 web/manifest.json
-
-# IDE specific
 *.iml
 *.ipr
 *.iws
 .idea/
 .vscode/
 *.code-workspace
-
-# macOS specific
 .DS_Store
