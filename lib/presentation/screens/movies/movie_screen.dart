@@ -98,9 +98,10 @@ class _MovieDetails extends StatelessWidget {
                   ),
                 )
               ],
-            )),
+            )
+          ),
 
-        // Generos de la pelicula
+        //Generos de la pelicula
         Padding(
             padding: const EdgeInsets.all(8),
             child: Wrap(
@@ -142,7 +143,7 @@ class _ActorsByMovie extends ConsumerWidget {
 
     final actors = actorsByMovie[movieId]!;
     return SizedBox(
-      height: 200,
+      height: 305,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: actors.length,

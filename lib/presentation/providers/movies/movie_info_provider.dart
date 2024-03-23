@@ -20,7 +20,6 @@ class MovieMapNotifier extends StateNotifier<Map<String, Movie>> {
     // do not do anything if the movie is already loaded
     if (state[movieId] != null) return;
 
-    print('requesting movie $movieId');
     final movie = await getMovie(movieId);
 
     state = {...state, movieId: movie};
