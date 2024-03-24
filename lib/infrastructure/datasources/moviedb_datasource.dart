@@ -67,4 +67,19 @@ class MovieDBDataSource extends MoviesDatasource {
 
     return movie;
   }
+  
+  @override
+  Future<List<Movie>> searchMovies(String query, {int page = 1}) async {
+
+    if (query.isEmpty) {
+      return [];
+    }
+
+    final response = await dio.get(
+      '/search/movie',
+      queryParameters: {'query': query, 'page': page}
+    );
+
+    return _jsonToMovies(response.data);
+  }
 }
